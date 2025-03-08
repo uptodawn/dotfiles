@@ -1,0 +1,148 @@
+{
+    // editor
+    "editor.fontFamily": "DejaVuSansM Nerd Font Mono",
+    "editor.fontSize": 15,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.insertSpaces": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.largeFileOptimizations": false,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.cursorBlinking": "solid",
+    "editor.lineNumbers": "relative",
+    "editor.inlayHints.enabled": "off",
+    "editor.links": false,
+    "editor.rulers": [80],
+    "editor.stickyScroll.enabled": true,
+    // update
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+    // extensions
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": true,
+    // workbench
+    "workbench.startupEditor": "none",
+    "workbench.welcomePage.walkthroughs.openOnInstall": false,
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.iconTheme": "vscode-icons",
+    // files
+    "files.autoGuessEncoding": true,
+    "files.associations": {
+        ".clang-*": "yaml",
+        ".clangd": "yaml",
+        "Makefile.*": "makefile"
+    },
+    // terminal
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.shellIntegration.enabled": false,
+    // extension specific
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "clangd.arguments": [
+        "--header-insertion=never",
+        "--function-arg-placeholders=false"
+    ],
+    "vsicons.dontShowNewVersionMessage": true,
+    // misc
+    "search.followSymlinks": false,
+    "window.restoreWindows": "none",
+    "telemetry.telemetryLevel": "off",
+    // vim
+    "vim.showMarksInGutter": true,
+    "vim.autoindent": false,
+    "vim.useCtrlKeys": false,
+    "vim.easymotion": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-n>": true, "<C-p>": true, "<C-u>": true, "<C-d>": true,
+        "<C-e>": true, "<C-y>": true, "<C-a>": true, "<C-x>": true,
+        "<C-i>": true, "<C-o>": true, "<C-h>": true, "<C-w>": true,
+        "<C-r>": true
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // use vscode native undo/redo
+        { "before": [ "u" ], "commands": [ "undo" ] },
+        { "before": [ "U" ], "commands": [ "undo" ] },
+        { "before": [ "<c-r>" ], "commands": [ "redo" ] },
+        // useful
+        { "before": [ "K" ], "commands": [ "editor.action.showHover" ] },
+        { "before": [ "J" ], "commands": [ "workbench.action.gotoSymbol" ] },
+        // goto definition/declaration/reference/implementation/type_definition
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.showCallHierarchy"]
+        },
+        {
+            "before": ["g", "d"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        {
+            "before": ["g", "D"],
+            "commands": ["editor.action.revealDeclaration"]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.goToReferences"]
+        },
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["g", "t"],
+            "commands": ["editor.action.goToTypeDefinition"]
+        },
+        // peek definition/declaration/reference/implementation/type_definition
+        {
+            "before": ["<leader>", "g", "d"],
+            "commands": ["editor.action.peekDefinition"]
+        },
+        {
+            "before": ["<leader>", "g", "D"],
+            "commands": ["editor.action.peekDeclaration"]
+        },
+        {
+            "before": ["<leader>", "g", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        {
+            "before": ["<leader>", "g", "i"],
+            "commands": ["editor.action.peekImplementation"]
+        },
+        {
+            "before": ["<leader>", "g", "t"],
+            "commands": ["editor.action.peekTypeDefinition"]
+        },
+        // diagnostic jump, e: jump in current file, E: jump in opened files
+        {
+            "before": ["]", "e"],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            "before": ["[", "e"],
+            "commands": ["editor.action.marker.prev"]
+        },
+        {
+            "before": ["]", "E"],
+            "commands": ["editor.action.marker.nextInFiles"]
+        },
+        {
+            "before": ["[", "E"],
+            "commands": ["editor.action.marker.prevInFiles"]
+        },
+        // show incoming/outgoing calls, not work in most cases
+        {
+            "before": ["<leader>", "c", "i"],
+            "commands": ["editor.showIncomingCalls"]
+        },
+        {
+            "before": ["<leader>", "c", "o"],
+            "commands": ["editor.showOutgoingCalls"]
+        }
+    ]
+}
