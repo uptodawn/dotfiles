@@ -68,7 +68,7 @@
         // use vscode native undo/redo
         { "before": [ "u" ], "commands": [ "undo" ] },
         { "before": [ "U" ], "commands": [ "undo" ] },
-        { "before": [ "<c-r>" ], "commands": [ "redo" ] },
+        { "before": [ "<C-r>" ], "commands": [ "redo" ] },
         // useful
         { "before": [ "K" ], "commands": [ "editor.action.showHover" ] },
         { "before": [ "J" ], "commands": [ "workbench.action.gotoSymbol" ] },
