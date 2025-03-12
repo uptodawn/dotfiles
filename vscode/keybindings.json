@@ -310,22 +310,22 @@
     },
     {
         "key": "ctrl+w ctrl+l",
-        "command": "workbench.action.focusNextGroup",
+        "command": "workbench.action.focusFirstEditorGroup",
         "when": "sideBarFocus || auxiliaryBarFocus"
     },
     {
         "key": "ctrl+w ctrl+h",
-        "command": "workbench.action.focusNextGroup",
+        "command": "workbench.action.focusLastEditorGroup",
         "when": "sideBarFocus || auxiliaryBarFocus"
     },
     {
         "key": "ctrl+w l",
-        "command": "workbench.action.focusNextGroup",
+        "command": "workbench.action.focusFirstEditorGroup",
         "when": "sideBarFocus || auxiliaryBarFocus"
     },
     {
         "key": "ctrl+w h",
-        "command": "workbench.action.focusNextGroup",
+        "command": "workbench.action.focusLastEditorGroup",
         "when": "sideBarFocus || auxiliaryBarFocus"
     }
 ]
