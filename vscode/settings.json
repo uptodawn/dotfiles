@@ -30,8 +30,7 @@
     "files.autoGuessEncoding": true,
     "files.associations": {
         ".clang-*": "yaml",
-        ".clangd": "yaml",
-        "Makefile.*": "makefile"
+        ".clangd": "yaml"
     },
     // terminal
     "terminal.integrated.fontSize": 15,
@@ -53,96 +52,30 @@
     "window.restoreWindows": "none",
     "telemetry.telemetryLevel": "off",
     // vim
-    "vim.showMarksInGutter": true,
-    "vim.autoindent": false,
-    "vim.useCtrlKeys": false,
     "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.useCtrlKeys": true,
     "vim.leader": "<space>",
     "vim.handleKeys": {
-        "<C-n>": true, "<C-p>": true, "<C-u>": true, "<C-d>": true,
-        "<C-e>": true, "<C-y>": true, "<C-a>": true, "<C-x>": true,
-        "<C-i>": true, "<C-o>": true, "<C-h>": true, "<C-w>": true,
-        "<C-r>": true
+        "<C-f>": false, "<C-b>": false,
+        "<C-k>": false
     },
+    "vim.insertModeKeyBindings": [
+        { "before": [ "j", "j" ], "after": [ "<Esc>" ] }
+    ],
     "vim.normalModeKeyBindingsNonRecursive": [
-        // use vscode native undo/redo
         { "before": [ "u" ], "commands": [ "undo" ] },
-        { "before": [ "U" ], "commands": [ "undo" ] },
         { "before": [ "<C-r>" ], "commands": [ "redo" ] },
-        // useful
+        { "before": [ "<C-l>" ], "commands": [ ":nohl" ] },
+        { "before": [ "<C-n>" ], "commands": [ "workbench.action.files.newUntitledFile" ] },
+        { "before": [ "<C-p>" ], "commands": [ "workbench.action.quickOpen" ] },
         { "before": [ "K" ], "commands": [ "editor.action.showHover" ] },
-        { "before": [ "J" ], "commands": [ "workbench.action.gotoSymbol" ] },
-        // goto definition/declaration/reference/implementation/type_definition
-        {
-            "before": ["g", "h"],
-            "commands": ["editor.showCallHierarchy"]
-        },
-        {
-            "before": ["g", "d"],
-            "commands": ["editor.action.revealDefinition"]
-        },
-        {
-            "before": ["g", "D"],
-            "commands": ["editor.action.revealDeclaration"]
-        },
-        {
-            "before": ["g", "r"],
-            "commands": ["editor.action.goToReferences"]
-        },
-        {
-            "before": ["g", "i"],
-            "commands": ["editor.action.goToImplementation"]
-        },
-        {
-            "before": ["g", "t"],
-            "commands": ["editor.action.goToTypeDefinition"]
-        },
-        // peek definition/declaration/reference/implementation/type_definition
-        {
-            "before": ["<leader>", "g", "d"],
-            "commands": ["editor.action.peekDefinition"]
-        },
-        {
-            "before": ["<leader>", "g", "D"],
-            "commands": ["editor.action.peekDeclaration"]
-        },
-        {
-            "before": ["<leader>", "g", "r"],
-            "commands": ["editor.action.referenceSearch.trigger"]
-        },
-        {
-            "before": ["<leader>", "g", "i"],
-            "commands": ["editor.action.peekImplementation"]
-        },
-        {
-            "before": ["<leader>", "g", "t"],
-            "commands": ["editor.action.peekTypeDefinition"]
-        },
-        // diagnostic jump, e: jump in current file, E: jump in opened files
-        {
-            "before": ["]", "e"],
-            "commands": ["editor.action.marker.next"]
-        },
-        {
-            "before": ["[", "e"],
-            "commands": ["editor.action.marker.prev"]
-        },
-        {
-            "before": ["]", "E"],
-            "commands": ["editor.action.marker.nextInFiles"]
-        },
-        {
-            "before": ["[", "E"],
-            "commands": ["editor.action.marker.prevInFiles"]
-        },
-        // show incoming/outgoing calls, not work in most cases
-        {
-            "before": ["<leader>", "c", "i"],
-            "commands": ["editor.showIncomingCalls"]
-        },
-        {
-            "before": ["<leader>", "c", "o"],
-            "commands": ["editor.showOutgoingCalls"]
-        }
+        { "before": [ "g", "d" ], "commands": [ "editor.action.revealDefinition" ] },
+        { "before": [ "g", "f" ], "commands": [ "editor.action.revealDeclaration" ] },
+        { "before": [ "g", "D" ], "commands": [ "editor.action.peekDefinition" ] },
+        { "before": [ "g", "F" ], "commands": [ "editor.action.peekDeclaration" ] },
+        { "before": [ "g", "H" ], "commands": [ "editor.action.referenceSearch.trigger" ] },
+        { "before": [ "<C-w>", "g", "d" ], "commands": [ "editor.action.revealDefinitionAside" ] }
     ]
 }
