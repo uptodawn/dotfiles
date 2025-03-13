@@ -227,6 +227,11 @@
         "when": "neovim.init && neovim.mode == normal && editorTextFocus && editorHoverVisible"
     },
     {
+        "command": "editor.action.showHover",
+        "key": "shift+k",
+        "when": "vim.active && vim.mode == 'Normal' && editorTextFocus && editorHoverVisible"
+    },
+    {
         "command": "editor.action.pageDownHover",
         "key": "ctrl+f",
         "when": "editorHoverFocused"
