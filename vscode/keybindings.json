@@ -229,7 +229,7 @@
     {
         "command": "editor.action.showHover",
         "key": "shift+k",
-        "when": "vim.active && vim.mode == 'Normal' && editorTextFocus && editorHoverVisible"
+        "when": "vim.active && vim.mode == 'Normal' && editorTextFocus"
     },
     {
         "command": "editor.action.pageDownHover",
