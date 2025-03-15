@@ -332,5 +332,11 @@
         "key": "ctrl+w h",
         "command": "workbench.action.focusLastEditorGroup",
         "when": "sideBarFocus || auxiliaryBarFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "\u000b" },
+        "when": "terminalFocus"
     }
 ]
