@@ -78,9 +78,13 @@
         { "before": [ "<C-i>" ], "commands": [ "workbench.action.navigateForward" ] },
         { "before": [ "<C-o>" ], "commands": [ "workbench.action.navigateBack" ] },
         { "before": [ "g", "d" ], "commands": [ "editor.action.revealDefinition" ] },
-        { "before": [ "g", "f" ], "commands": [ "editor.action.revealDeclaration" ] },
         { "before": [ "g", "D" ], "commands": [ "editor.action.peekDefinition" ] },
+        { "before": [ "g", "f" ], "commands": [ "editor.action.revealDeclaration" ] },
         { "before": [ "g", "F" ], "commands": [ "editor.action.peekDeclaration" ] },
+        { "before": [ "g", "t" ], "commands": [ "editor.action.goToTypeDefinition" ] },
+        { "before": [ "g", "T" ], "commands": [ "editor.action.peekTypeDefinition" ] },
+        { "before": [ "g", "i" ], "commands": [ "editor.action.goToImplementation" ] },
+        { "before": [ "g", "I" ], "commands": [ "editor.action.peekImplementation" ] },
         { "before": [ "g", "H" ], "commands": [ "editor.action.referenceSearch.trigger" ] },
         { "before": [ "<C-w>", "g", "d" ], "commands": [ "editor.action.revealDefinitionAside" ] }
     ]

@@ -338,5 +338,15 @@
         "command": "workbench.action.terminal.sendSequence",
         "args": { "text": "\u000b" },
         "when": "terminalFocus"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "references-view.showCallHierarchy",
+        "when": "editorHasCallHierarchyProvider"
+    },
+    {
+        "key": "shift+alt+t",
+        "command": "references-view.showTypeHierarchy",
+        "when": "editorHasTypeHierarchyProvider"
     }
 ]
