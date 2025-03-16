@@ -2,8 +2,7 @@
 
 ### windows
 
-```
-cd /d C:\Users\%username%\AppData\Roaming\Code\User
-mklink keybindings.json PATH/keybindings.json
-mklink settings.json PATH/settings.json
+```cmd
+mklink %appdata%\Code\User\keybindings.json %cd%\vscode\keybindings.json
+mklink %appdata%\Code\User\settings.json %cd%\vscode\settings.json
 ```
