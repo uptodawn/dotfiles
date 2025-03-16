@@ -41,16 +41,6 @@
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.shellIntegration.enabled": false,
-    // extension specific
-    "clangd.arguments": [
-        "--header-insertion=never",
-        "--function-arg-placeholders=false"
-    ],
-    "vsicons.dontShowNewVersionMessage": true,
-    "workspaceSidebar.cleanLabels": false,
-    "workspaceSidebar.rootFolders": [],
-    "remote.SSH.remotePlatform": {},
-    "remote.SSH.localServerDownload": "always",
     // misc
     "search.followSymlinks": false,
     "window.restoreWindows": "none",
@@ -87,5 +77,15 @@
         { "before": [ "g", "I" ], "commands": [ "editor.action.peekImplementation" ] },
         { "before": [ "g", "H" ], "commands": [ "editor.action.referenceSearch.trigger" ] },
         { "before": [ "<C-w>", "g", "d" ], "commands": [ "editor.action.revealDefinitionAside" ] }
-    ]
+    ],
+    // extension specific
+    "clangd.arguments": [
+        "--header-insertion=never",
+        "--function-arg-placeholders=false"
+    ],
+    "vsicons.dontShowNewVersionMessage": true,
+    "workspaceSidebar.cleanLabels": false,
+    "workspaceSidebar.rootFolders": [],
+    "remote.SSH.remotePlatform": {},
+    "remote.SSH.localServerDownload": "always",
 }
