@@ -296,21 +296,7 @@
     // #endregion
     // custom
     {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    },
-    {
-        "key": "ctrl+`",
-        "command": "-workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    },
-    {
-        "key": "ctrl+`",
+        "key": "ctrl+'",
         "command": "workbench.action.togglePanel"
     },
     {
@@ -332,12 +318,6 @@
         "key": "ctrl+w h",
         "command": "workbench.action.focusLastEditorGroup",
         "when": "sideBarFocus || auxiliaryBarFocus"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "workbench.action.terminal.sendSequence",
-        "args": { "text": "\u000b" },
-        "when": "terminalFocus"
     },
     {
         "key": "shift+alt+h",

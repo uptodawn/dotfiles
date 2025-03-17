@@ -41,6 +41,7 @@
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.allowChords": false,
     // misc
     "search.followSymlinks": false,
     "window.restoreWindows": "none",
