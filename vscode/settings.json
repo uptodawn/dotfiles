@@ -89,6 +89,8 @@
     "workspaceSidebar.rootFolders": [],
     "remote.SSH.remotePlatform": {},
     "remote.SSH.localServerDownload": "always",
+    "remote.SSH.useExecServer": false,
+    "remote.SSH.useLocalServer": false,
     "continue.enableTabAutocomplete": true,
     "continue.showInlineTip": false,
     "continue.telemetryEnabled": false,
