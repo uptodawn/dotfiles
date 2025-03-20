@@ -61,6 +61,7 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": [ "u" ], "commands": [ "undo" ] },
+        { "before": [ "J" ], "commands": [ "workbench.action.gotoSymbol" ] },
         { "before": [ "<C-r>" ], "commands": [ "redo" ] },
         { "before": [ "<C-l>" ], "commands": [ ":nohl" ] },
         { "before": [ "<C-n>" ], "commands": [ "workbench.action.files.newUntitledFile" ] },
