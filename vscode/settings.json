@@ -77,6 +77,10 @@
         { "before": [ "g", "i" ], "commands": [ "editor.action.goToImplementation" ] },
         { "before": [ "g", "I" ], "commands": [ "editor.action.peekImplementation" ] },
         { "before": [ "g", "H" ], "commands": [ "editor.action.referenceSearch.trigger" ] },
+        { "before": [ "]", "e" ], "commands": [ "editor.action.marker.next" ] },
+        { "before": [ "[", "e" ], "commands": [ "editor.action.marker.prev" ] },
+        { "before": [ "]", "E" ], "commands": [ "editor.action.marker.nextInFiles" ] },
+        { "before": [ "[", "E" ], "commands": [ "editor.action.marker.prevInFiles" ] },
         { "before": [ "<C-w>", "g", "d" ], "commands": [ "editor.action.revealDefinitionAside" ] }
     ],
     // extension specific
