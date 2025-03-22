@@ -215,6 +215,11 @@
         "when": "!editorTextFocus && neovim.mode != 'cmdline' && !terminalFocus && !filesExplorerFocus && !searchViewletFocus"
     },
     {
+        "key": "ctrl+w ctrl+q",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "!editorTextFocus && neovim.mode != 'cmdline' && !terminalFocus && !filesExplorerFocus && !searchViewletFocus"
+    },
+    {
         "key": "ctrl+Escape",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
