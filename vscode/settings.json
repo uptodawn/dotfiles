@@ -6,6 +6,7 @@
     "editor.fontSize": 15,
     "editor.inlayHints.enabled": "off",
     "editor.insertSpaces": false,
+    "editor.largeFileOptimizations": true,
     "editor.lineNumbers": "relative",
     "editor.links": false,
     "editor.rulers": [ 80 ],
@@ -40,7 +41,7 @@
     "terminal.integrated.sendKeybindingsToShell": true,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.enablePersistentSessions": false,
-    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.shellIntegration.enabled": true,
     "terminal.integrated.allowChords": false,
     // misc
     "search.followSymlinks": false,
@@ -51,6 +52,8 @@
     "vim.incsearch": true,
     "vim.hlsearch": true,
     "vim.useCtrlKeys": true,
+    "vim.showMarksInGutter": true,
+    "vim.autoindent": false,
     "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-f>": false, "<C-b>": false,
@@ -87,7 +90,8 @@
     // extension specific
     "clangd.arguments": [
         "--header-insertion=never",
-        "--function-arg-placeholders=false"
+        "--function-arg-placeholders=false",
+        "--pch-storage=memory"
     ],
     "vsicons.dontShowNewVersionMessage": true,
     "workspaceSidebar.cleanLabels": false,
