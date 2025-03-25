@@ -43,6 +43,9 @@
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.shellIntegration.enabled": true,
     "terminal.integrated.allowChords": false,
+    // explorer
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
     // misc
     "search.followSymlinks": false,
     "window.restoreWindows": "none",
