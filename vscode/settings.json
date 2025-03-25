@@ -103,6 +103,9 @@
     "remote.SSH.localServerDownload": "always",
     "remote.SSH.useExecServer": true,
     "remote.SSH.useLocalServer": true,
+    "remote.extensionKind": {
+        "Continue.continue": [ "workspace" ]
+    },
     "continue.enableTabAutocomplete": true,
     "continue.showInlineTip": false,
     "continue.telemetryEnabled": false,
