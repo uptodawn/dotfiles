@@ -30,6 +30,7 @@
     "workbench.welcomePage.walkthroughs.openOnInstall": false,
     "workbench.tree.enableStickyScroll": true,
     "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.showTabs": "none",
     // files
     "files.autoGuessEncoding": true,
     "files.associations": {
