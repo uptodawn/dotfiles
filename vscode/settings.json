@@ -69,7 +69,7 @@
         { "before": [ "u" ], "commands": [ "undo" ] },
         { "before": [ "J" ], "commands": [ "workbench.action.gotoSymbol" ] },
         { "before": [ "<C-r>" ], "commands": [ "redo" ] },
-        { "before": [ "<C-l>" ], "commands": [ ":nohl" ] },
+        { "before": [ "<C-l>" ], "commands": [ ":nohlsearch" ] },
         { "before": [ "<C-n>" ], "commands": [ "workbench.action.files.newUntitledFile" ] },
         { "before": [ "<C-p>" ], "commands": [ "workbench.action.quickOpen" ] },
         { "before": [ "<C-t>" ], "commands": [ "workbench.action.showAllSymbols" ] },
