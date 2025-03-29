@@ -97,7 +97,13 @@
         { "before": [ "[", "c" ], "commands": [ "workbench.action.compareEditor.previousChange" ] },
         { "before": [ "]", "C" ], "commands": [ "workbench.action.editor.nextChange" ] },
         { "before": [ "[", "C" ], "commands": [ "workbench.action.editor.previousChange" ] },
-        { "before": [ "<C-w>", "g", "d" ], "commands": [ "editor.action.revealDefinitionAside" ] }
+        { "before": [ "<C-w>", "g", "d" ], "commands": [ "editor.action.revealDefinitionAside" ] },
+        { "before": [ "<leader>", "p" ], "after": [ "\"", "+", "p" ] }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        { "before": [ "<leader>", "y" ], "after": [ "\"", "+", "y" ] },
+        { "before": [ "<leader>", "p" ], "after": [ "\"", "+", "p" ] },
+        { "before": [ "<leader>", "P" ], "after": [ "\"", "_", "d", "P" ] }
     ],
     // extension specific
     "clangd.arguments": [
