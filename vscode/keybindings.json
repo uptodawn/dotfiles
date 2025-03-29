@@ -267,5 +267,14 @@
     {
         "key": "shift+alt+t", "command": "references-view.showTypeHierarchy",
         "when": "editorHasTypeHierarchyProvider"
-    }
+    },
+    // toggle diff editor
+    {
+        "key": "alt+i", "command": "git.openFile",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "alt+i", "command": "git.openChange",
+        "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
+    },
 ]
