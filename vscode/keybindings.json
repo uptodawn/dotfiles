@@ -290,4 +290,12 @@
         "command": "breadcrumbs.selectFocused",
         "when": "breadcrumbsActive && breadcrumbsVisible"
     },
+    {
+        "key": "ctrl+k ctrl+g",
+        "command": "copyFilePath"
+    },
+    {
+        "key": "ctrl+k g",
+        "command": "copyRelativeFilePath"
+    },
 ]
