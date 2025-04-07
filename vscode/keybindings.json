@@ -274,6 +274,7 @@
         "key": "alt+i", "command": "git.openChange",
         "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
     },
+    // navigate in breadcrumbs
     {
         "key": "ctrl+l", "command": "breadcrumbs.focusNext",
         "when": "breadcrumbsActive && breadcrumbsVisible"
@@ -287,6 +288,7 @@
         "command": "breadcrumbs.selectFocused",
         "when": "breadcrumbsActive && breadcrumbsVisible"
     },
+    // yank current file path
     {
         "key": "ctrl+k ctrl+g",
         "command": "copyFilePath"
@@ -294,5 +296,32 @@
     {
         "key": "ctrl+k g",
         "command": "copyRelativeFilePath"
+    },
+    // change panel height
+    {
+        "key": "ctrl+alt+j", "command": "workbench.action.increaseViewHeight",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+alt+k", "command": "workbench.action.decreaseViewHeight",
+        "when": "panelFocus"
+    },
+    // change sidebar width
+    {
+        "key": "ctrl+alt+h", "command": "workbench.action.increaseViewWidth",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "ctrl+alt+l", "command": "workbench.action.decreaseViewWidth",
+        "when": "sideBarFocus"
+    },
+    // change auxiliarybar width
+    {
+        "key": "ctrl+alt+l", "command": "workbench.action.increaseViewWidth",
+        "when": "!sideBarVisible && auxiliaryBarVisible"
+    },
+    {
+        "key": "ctrl+alt+h", "command": "workbench.action.decreaseViewWidth",
+        "when": "!sideBarVisible && auxiliaryBarVisible"
     },
 ]
