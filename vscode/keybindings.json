@@ -297,31 +297,39 @@
         "key": "ctrl+k g",
         "command": "copyRelativeFilePath"
     },
-    // change panel height
+    // change panel height/width
     {
-        "key": "ctrl+alt+j", "command": "workbench.action.increaseViewHeight",
+        "key": "ctrl+shift+h", "command": "workbench.action.increaseViewWidth",
         "when": "panelFocus"
     },
     {
-        "key": "ctrl+alt+k", "command": "workbench.action.decreaseViewHeight",
+        "key": "ctrl+shift+l", "command": "workbench.action.decreaseViewWidth",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+shift+j", "command": "workbench.action.increaseViewHeight",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+shift+k", "command": "workbench.action.decreaseViewHeight",
         "when": "panelFocus"
     },
     // change sidebar width
     {
-        "key": "ctrl+alt+h", "command": "workbench.action.increaseViewWidth",
+        "key": "ctrl+shift+h", "command": "workbench.action.increaseViewWidth",
         "when": "sideBarFocus"
     },
     {
-        "key": "ctrl+alt+l", "command": "workbench.action.decreaseViewWidth",
+        "key": "ctrl+shift+l", "command": "workbench.action.decreaseViewWidth",
         "when": "sideBarFocus"
     },
     // change auxiliarybar width
     {
-        "key": "ctrl+alt+l", "command": "workbench.action.increaseViewWidth",
+        "key": "ctrl+shift+l", "command": "workbench.action.increaseViewWidth",
         "when": "!sideBarVisible && auxiliaryBarVisible"
     },
     {
-        "key": "ctrl+alt+h", "command": "workbench.action.decreaseViewWidth",
+        "key": "ctrl+shift+h", "command": "workbench.action.decreaseViewWidth",
         "when": "!sideBarVisible && auxiliaryBarVisible"
     },
 ]
