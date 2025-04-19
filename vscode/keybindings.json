@@ -68,6 +68,7 @@
 	{ "key": "ctrl+w l", "command": "workbench.action.focusFirstEditorGroup", "when": "sideBarFocus || auxiliaryBarFocus" },
 	{ "key": "shift+alt+h", "command": "references-view.showCallHierarchy", "when": "editorHasCallHierarchyProvider" },
 	{ "key": "shift+alt+t", "command": "references-view.showTypeHierarchy", "when": "editorHasTypeHierarchyProvider" },
+	{ "key": "ctrl+shift+alt+p", "command": "projectManager.listProjectsNewWindow" },
 	// toggle diff editor
 	{ "key": "alt+i", "command": "git.openFile", "when": "textCompareEditorVisible" },
 	{ "key": "alt+i", "command": "git.openChange", "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'" },
