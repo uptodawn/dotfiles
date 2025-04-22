@@ -113,8 +113,7 @@
 		"--pch-storage=memory"
 	],
 	"vsicons.dontShowNewVersionMessage": true,
-	"workspaceSidebar.cleanLabels": false,
-	"workspaceSidebar.rootFolders": [],
+	"projectManager.tags": [],
 	"remote.SSH.remotePlatform": {},
 	"remote.SSH.localServerDownload": "always",
 	"remote.SSH.useExecServer": true,
