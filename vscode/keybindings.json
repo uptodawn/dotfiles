@@ -74,6 +74,10 @@
 	// toggle diff editor
 	{ "key": "alt+i", "command": "git.openFile", "when": "textCompareEditorVisible" },
 	{ "key": "alt+i", "command": "git.openChange", "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'" },
+	// navigate in panels
+	{ "key": "ctrl+tab", "command": "workbench.action.nextPanelView", "when": "panelFocus" },
+	{ "key": "ctrl+shift+tab", "command": "workbench.action.previousPanelView", "when": "panelFocus" },
+	{ "key": "ctrl+j", "command": "workbench.action.focusPanel", "when": "!panelFocus" },
 	// navigate in breadcrumbs
 	{ "key": "ctrl+h", "command": "breadcrumbs.focusPrevious", "when": "breadcrumbsActive && breadcrumbsVisible" },
 	{ "key": "ctrl+l", "command": "breadcrumbs.focusNext", "when": "breadcrumbsActive && breadcrumbsVisible" },
