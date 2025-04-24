@@ -94,6 +94,8 @@
 		{ "before": [ "g", "l" ], "commands": [ "editor.action.goToImplementation" ] },
 		{ "before": [ "g", "L" ], "commands": [ "editor.action.peekImplementation" ] },
 		{ "before": [ "g", "H" ], "commands": [ "editor.action.referenceSearch.trigger" ] },
+		{ "before": [ "g", "h", "c" ], "commands": [ "editor.showCallHierarchy" ] },
+		{ "before": [ "g", "h", "t" ], "commands": [ "editor.showTypeHierarchy" ] },
 		{ "before": [ "]", "e" ], "commands": [ "editor.action.marker.next" ] },
 		{ "before": [ "[", "e" ], "commands": [ "editor.action.marker.prev" ] },
 		{ "before": [ "]", "E" ], "commands": [ "editor.action.marker.nextInFiles" ] },
