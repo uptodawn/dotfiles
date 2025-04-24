@@ -39,7 +39,11 @@
 	},
 	// terminal
 	"terminal.integrated.fontSize": 15,
-	"terminal.integrated.sendKeybindingsToShell": true,
+	"terminal.integrated.commandsToSkipShell": [
+		"-workbench.action.files.newUntitledFile",
+		"-workbench.action.quickOpen",
+		"-workbench.action.terminal.focusFind"
+	],
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
 	"terminal.integrated.enablePersistentSessions": false,
 	"terminal.integrated.shellIntegration.enabled": true,
