@@ -46,7 +46,7 @@
 	],
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
 	"terminal.integrated.enablePersistentSessions": false,
-	"terminal.integrated.shellIntegration.enabled": true,
+	"terminal.integrated.shellIntegration.enabled": false,
 	"terminal.integrated.allowChords": false,
 	// explorer
 	"explorer.fileNesting.enabled": true,
