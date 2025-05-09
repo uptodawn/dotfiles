@@ -10,5 +10,6 @@ mklink %appdata%\Code\User\keybindings.json %cd%\vscode\keybindings.json
 ## linux
 
 ```shell
+mkdir -p ~/.config/Code/User
 stow .
 ```
