@@ -52,6 +52,9 @@
 	// explorer
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.expand": false,
+	"explorer.fileNesting.patterns": {
+		"*.c": "${capture}.o"
+	},
 	// misc
 	"search.followSymlinks": false,
 	"window.restoreWindows": "none",
