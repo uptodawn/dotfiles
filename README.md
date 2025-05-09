@@ -1,15 +1,14 @@
-## vscode
+## windows
 
-### windows
+### vscode
 
 ```cmd
-mklink %appdata%\Code\User\keybindings.json %cd%\vscode\keybindings.json
 mklink %appdata%\Code\User\settings.json %cd%\vscode\settings.json
+mklink %appdata%\Code\User\keybindings.json %cd%\vscode\keybindings.json
 ```
 
-### linux
+## linux
 
-```cmd
-ln -sf $PWD/vscode/settings.json ~/.config/Code/User/settings.json
-ln -sf $PWD/vscode/keybindings.json ~/.config/Code/User/keybindings.json
+```shell
+stow .
 ```
