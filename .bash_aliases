@@ -1,6 +1,6 @@
 alias ls='ls --color=auto --group-directories-first'
-alias la='ls --color=auto --group-directories-first -vA'
-alias ll='ls --color=auto --group-directories-first -vl'
+alias la='ls --color=auto --group-directories-first -valh'
+alias ll='ls --color=auto --group-directories-first -vAlh'
 
 if [ ! -z "$(which nvim)" ]; then
 	export MANPAGER='nvim +Man!'
