@@ -11,5 +11,6 @@ mklink %appdata%\Code\User\keybindings.json %cd%\.config\Code\User\keybindings.j
 
 ```shell
 mkdir -p ~/.config/Code/User
+mkdir -p ~/.config/Code\ -\ OSS/User
 stow .
 ```
