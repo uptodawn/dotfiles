@@ -6,12 +6,16 @@ export XCURSOR_SIZE=$((GDK_SCALE*24))
 
 picom &
 
+# dunst
 dunstrc=/tmp/dunstrc.tmp
 cp -L /etc/dunst/dunstrc $dunstrc
 sed -i "s/\(^ *font[^0-9]*\).*$/\1$((GDK_SCALE*11))/" $dunstrc
 sed -i "s/\(^ *scale[^0-9]*\).*$/\1$GDK_SCALE/" $dunstrc
 dunst -conf $dunstrc &
 
+# fcitx
+fcitxconf=~/.config/fcitx5/conf/classicui.conf
+sed -i "s/\(^Font[^0-9]*\).*$/\1$((GDK_SCALE*10))\"/" $fcitxconf
 [ -f ~/.xinputrc ] || fcitx5 -d
 
 STARTUP=dwm
