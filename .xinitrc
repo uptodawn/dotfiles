@@ -4,6 +4,9 @@ export GDK_DPI_SCALE=1
 export QT_SCALE_FACTOR=2
 export XCURSOR_SIZE=$((GDK_SCALE*24))
 
+dbus-update-activation-environment --verbose --systemd \
+	GDK_SCALE GDK_DPI_SCALE QT_SCALE_FACTOR
+
 picom &
 
 # dunst
