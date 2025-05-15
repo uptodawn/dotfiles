@@ -11,7 +11,7 @@ picom &
 
 # dunst
 dunstrc=/tmp/dunstrc.tmp
-cp -L /etc/dunst/dunstrc $dunstrc
+cp -L ~/.config/dunst/dunstrc $dunstrc
 sed -i "s/\(^ *font[^0-9]*\).*$/\1$((GDK_SCALE*11))/" $dunstrc
 sed -i "s/\(^ *scale[^0-9]*\).*$/\1$GDK_SCALE/" $dunstrc
 dunst -conf $dunstrc &
@@ -20,7 +20,7 @@ dunst -conf $dunstrc &
 fcitxconf=~/.config/fcitx5/conf/classicui.conf
 [ -f $fcitxconf ] || echo "Font=\"Sans 10\"" > $fcitxconf
 sed -i "s/\(^Font[^0-9]*\).*$/\1$((GDK_SCALE*10))\"/" $fcitxconf
-[ -f ~/.xinputrc ] || fcitx5 -d
+fcitx5 -d
 
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
