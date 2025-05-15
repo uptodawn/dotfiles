@@ -6,3 +6,10 @@
 mklink %appdata%\Code\User\settings.json %cd%\.config\Code\User\settings.json
 mklink %appdata%\Code\User\keybindings.json %cd%\.config\Code\User\keybindings.json
 ```
+
+## linux
+
+```
+mkdir -p ~/.config/Code/User ~/.config/Code\ -\ OSS/User
+stow .
+```
