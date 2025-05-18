@@ -8,6 +8,7 @@ dbus-update-activation-environment --verbose --systemd \
 	GDK_SCALE GDK_DPI_SCALE QT_SCALE_FACTOR XCURSOR_SIZE
 
 picom &
+dwmblocks &
 
 # dunst
 dunstrc=/tmp/dunstrc.tmp
