@@ -1,3 +1,6 @@
+# locale
+unset LC_ALL
+
 # HiDPI
 SCALE=1.0
 echo "Xft.dpi: $(echo 96*$SCALE/${SCALE%.*}/1 | bc)" | xrdb -merge
@@ -30,6 +33,5 @@ dbus-update-activation-environment --verbose --systemd \
 picom &
 dwmblocks &
 
-unset LC_ALL
 STARTUP=dwm
 . /etc/X11/xinit/xinitrc
