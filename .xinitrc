@@ -12,13 +12,13 @@ dbus-update-activation-environment --verbose --systemd \
 	GDK_SCALE GDK_DPI_SCALE QT_SCALE_FACTOR XCURSOR_SIZE
 
 # dunst
-sed "s/@DUNST_FONT@/Monospace $((GDK_SCALE*11))/; s/@DUNST_SCALE@/$GDK_SCALE/" \
+sed "s/@DUNST_FONT_SIZE@/$((${SCALE%.*}*11))/; s/@DUNST_SCALE@/${SCALE%.*}/" \
 	~/.config/dunst/dunstrc.in > ~/.config/dunst/dunstrc
 dunst &
 
 # fcitx
 fcitxconf=~/.config/fcitx5/conf/classicui.conf
-sed "s/@FCITX5_FONT_SIZE@/$(($GDK_SCALE*10))/" $fcitxconf.in > $fcitxconf
+sed "s/@FCITX_FONT_SIZE@/$((${SCALE%.*}*11))/" $fcitxconf.in > $fcitxconf
 fcitx5 -d
 
 export GTK_IM_MODULE=fcitx
