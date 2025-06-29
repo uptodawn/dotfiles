@@ -1,17 +1,20 @@
 *
 
-/.config/Code/User/keybindings.json
-/.config/Code/User/settings.json
-/.config/Code - OSS/User/keybindings.json
-/.config/Code - OSS/User/settings.json
-/.config/dunst/dunstrc
-/.config/fontconfig/fonts.conf
-/.config/nvim/init.lua
-/.config/picom/picom.conf
-/.config/tmux/tmux.conf
-/.config/wezterm/wezterm.lua
-/.bash_aliases
-/.gitignore
-/.vimrc
-/.xinitrc
-/README.md
+!/.config/clangd/config.yaml
+!/.config/Code/User/keybindings.json
+!/.config/Code/User/settings.json
+!/.config/Code - OSS/User/keybindings.json
+!/.config/Code - OSS/User/settings.json
+!/.config/dunst/dunstrc.in
+!/.config/fcitx5/conf/classicui.conf.in
+!/.config/fcitx5/conf/pinyin.conf
+!/.config/fontconfig/fonts.conf
+!/.config/nvim/init.lua
+!/.config/picom/picom.conf
+!/.config/tmux/tmux.conf
+!/.config/wezterm/wezterm.lua
+!/.bashrc
+!/.gitignore
+!/.vimrc
+!/.xinitrc
+!/README.md
