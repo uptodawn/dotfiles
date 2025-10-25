@@ -1,11 +1,13 @@
 *
 
-# for i in $(ls -pvA --g | grep -v .git/); do find $i -type f -o -type l | sort; done
-!/.config/clangd/config.yaml
-!/.config/Code/User/keybindings.json
-!/.config/Code/User/settings.json
+# find -path ./.git -prune -o ! -type d -print | LC_ALL=C sort | sed 's/^./!/'
+!/.bashrc
 !/.config/Code - OSS/User/keybindings.json
 !/.config/Code - OSS/User/settings.json
+!/.config/Code/User/keybindings.json
+!/.config/Code/User/settings.json
+!/.config/chromium-flags.conf
+!/.config/clangd/config.yaml
 !/.config/dunst/dunstrc.in
 !/.config/fcitx5/conf/classicui.conf.in
 !/.config/fcitx5/conf/pinyin.conf
@@ -14,7 +16,6 @@
 !/.config/picom/picom.conf
 !/.config/tmux/tmux.conf
 !/.config/wezterm/wezterm.lua
-!/.bashrc
 !/.gitignore
 !/.vimrc
 !/.xinitrc
