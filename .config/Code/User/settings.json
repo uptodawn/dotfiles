@@ -57,6 +57,10 @@
 		"*.c": "${capture}.o",
 		"*": ".${capture}.cmd"
 	},
+	// git
+	"git-graph.dialog.stashUncommittedChanges.includeUntracked": false,
+	"git-graph.repository.showUntrackedFiles": false,
+	"git.untrackedChanges": "hidden",
 	// misc
 	"search.followSymlinks": false,
 	"window.restoreWindows": "none",
