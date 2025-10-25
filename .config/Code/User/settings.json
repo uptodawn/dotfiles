@@ -3,7 +3,7 @@
 	"editor.bracketPairColorization.enabled": true,
 	"editor.cursorBlinking": "solid",
 	"editor.fontFamily": "DejaVuSansM Nerd Font Mono",
-	"editor.fontSize": 15,
+	"editor.fontSize": 16,
 	"editor.inlayHints.enabled": "off",
 	"editor.insertSpaces": false,
 	"editor.largeFileOptimizations": true,
@@ -39,7 +39,7 @@
 		".clangd": "yaml"
 	},
 	// terminal
-	"terminal.integrated.fontSize": 15,
+	"terminal.integrated.fontSize": 16,
 	"terminal.integrated.commandsToSkipShell": [
 		"-workbench.action.files.newUntitledFile",
 		"-workbench.action.quickOpen",
