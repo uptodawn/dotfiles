@@ -32,7 +32,6 @@
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.editor.showTabs": "none",
 	// files
-	"files.insertFinalNewline": true,
 	"files.autoGuessEncoding": true,
 	"files.associations": {
 		".clang-*": "yaml",
