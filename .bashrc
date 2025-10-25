@@ -2,18 +2,28 @@
 
 PS1='[\[\033[34;1m\]\w\[\033[0m\]]$ '
 
-HISTSIZE=1000
-HISTFILESIZE=3000
+HISTSIZE=1024
+HISTFILESIZE=4096
 HISTCONTROL=ignoreboth
 shopt -s histappend
 
-alias la='ls -valh --g'
-alias ll='ls -vAlh --g'
+alias ls='ls --g --color=auto'
+alias la='ls --g --color=auto -valh'
+alias ll='ls --g --color=auto -vAlh'
+alias grep='grep --color=auto'
 
-which nvim 2>/dev/null 1>/dev/null
-if [ $? -eq 0 ]; then
+if [ -n "$(command -v nvim)" ]; then
 	alias vim='nvim'
+	alias nvr='nvim -R'
 	export MANPAGER='nvim +Man!'
 	export VISUAL='nvim'
 	export EDITOR='nvim'
+fi
+
+if ! shopt -oq posix; then
+	if [ -f /usr/share/bash-completion/bash_completion ]; then
+		. /usr/share/bash-completion/bash_completion
+	elif [ -f /etc/bash_completion ]; then
+		. /etc/bash_completion
+	fi
 fi
