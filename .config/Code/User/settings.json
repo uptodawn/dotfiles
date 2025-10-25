@@ -69,8 +69,7 @@
 	"vim.autoindent": false,
 	"vim.leader": "<space>",
 	"vim.handleKeys": {
-		"<C-f>": false, "<C-b>": false,
-		"<C-j>": false, "<C-k>": false
+		"<C-k>": false
 	},
 	"vim.insertModeKeyBindings": [
 		{ "before": [ "j", "j" ], "after": [ "<Esc>" ] }

@@ -92,7 +92,7 @@
 	// navigate in panels
 	{ "key": "ctrl+tab", "command": "workbench.action.nextPanelView", "when": "panelFocus" },
 	{ "key": "ctrl+shift+tab", "command": "workbench.action.previousPanelView", "when": "panelFocus" },
-	{ "key": "ctrl+j", "command": "workbench.action.focusPanel", "when": "!panelFocus" },
+	{ "key": "ctrl+j", "command": "-workbench.action.togglePanel" },
 	// navigate in breadcrumbs
 	{ "key": "ctrl+h", "command": "breadcrumbs.focusPrevious", "when": "breadcrumbsActive && breadcrumbsVisible" },
 	{ "key": "ctrl+l", "command": "breadcrumbs.focusNext", "when": "breadcrumbsActive && breadcrumbsVisible" },
