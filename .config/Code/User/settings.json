@@ -108,8 +108,8 @@
 		{ "before": [ "[", "E" ], "commands": [ "editor.action.marker.prevInFiles" ] },
 		{ "before": [ "]", "c" ], "commands": [ "workbench.action.compareEditor.nextChange" ] },
 		{ "before": [ "[", "c" ], "commands": [ "workbench.action.compareEditor.previousChange" ] },
-		{ "before": [ "]", "C" ], "commands": [ "workbench.action.editor.nextChange" ] },
-		{ "before": [ "[", "C" ], "commands": [ "workbench.action.editor.previousChange" ] },
+		{ "before": [ "]", "d" ], "commands": [ "workbench.action.editor.nextChange" ] },
+		{ "before": [ "[", "d" ], "commands": [ "workbench.action.editor.previousChange" ] },
 		{ "before": [ "<C-w>", "g", "d" ], "commands": [ "editor.action.revealDefinitionAside" ] },
 		{ "before": [ "<leader>", "p" ], "after": [ "\"", "+", "p" ] }
 	],
