@@ -140,4 +140,5 @@
 	"continue.showInlineTip": false,
 	"continue.telemetryEnabled": false,
 	"continue.pauseCodebaseIndexOnStart": true,
+	"find-it-faster.general.killTerminalAfterUse": true,
 }
