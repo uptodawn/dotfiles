@@ -67,6 +67,8 @@
 	"git-graph.dialog.stashUncommittedChanges.includeUntracked": false,
 	"git-graph.repository.showUntrackedFiles": false,
 	"git.untrackedChanges": "hidden",
+	"git.blame.editorDecoration.enabled": true,
+	"diffEditor.ignoreTrimWhitespace": false,
 	// misc
 	"search.followSymlinks": false,
 	"window.restoreWindows": "none",
