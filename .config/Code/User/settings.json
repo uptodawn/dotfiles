@@ -39,9 +39,6 @@
 		".clang-*": "yaml",
 		".clangd": "yaml"
 	},
-	"files.watcherExclude": {
-		"**": true
-	},
 	// terminal
 	"terminal.integrated.fontSize": 16,
 	"terminal.integrated.commandsToSkipShell": [
