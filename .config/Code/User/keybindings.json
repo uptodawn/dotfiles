@@ -90,6 +90,10 @@
 	{ "key": "alt+i", "command": "git-graph.openFile", "when": "textCompareEditorVisible && resourceScheme == 'git-graph'" },
 	{ "key": "alt+i", "command": "git.openFile", "when": "textCompareEditorVisible && resourceScheme != 'git-graph'" },
 	{ "key": "alt+i", "command": "git.openChange", "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'" },
+	{ "key": "alt+s", "command": "git.viewStagedChanges", "when": "editorTextFocus && !textCompareEditorActive" },
+	{ "key": "alt+u", "command": "git.viewChanges", "when": "editorTextFocus && !textCompareEditorActive" },
+	{ "key": "ctrl+k ctrl+a", "command": "git.stageSelectedRanges", "when": "editorTextFocus && !operationInProgress" },
+	{ "key": "ctrl+k ctrl+n", "command": "git.unstageSelectedRanges", "when": "editorTextFocus && !operationInProgress" },
 	// navigate in panels
 	{ "key": "ctrl+tab", "command": "workbench.action.nextPanelView", "when": "panelFocus" },
 	{ "key": "ctrl+shift+tab", "command": "workbench.action.previousPanelView", "when": "panelFocus" },
