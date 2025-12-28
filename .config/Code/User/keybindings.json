@@ -94,6 +94,11 @@
 	{ "key": "alt+u", "command": "git.viewChanges", "when": "editorTextFocus && !textCompareEditorActive" },
 	{ "key": "ctrl+k ctrl+a", "command": "git.stageSelectedRanges", "when": "editorTextFocus && !operationInProgress" },
 	{ "key": "ctrl+k ctrl+n", "command": "git.unstageSelectedRanges", "when": "editorTextFocus && !operationInProgress" },
+	// navigate in diff editor
+	{ "key": "ctrl+n", "command": "workbench.action.compareEditor.nextChange", "when": "editorTextFocus && textCompareEditorVisible && vim.mode != 'Insert'" },
+	{ "key": "ctrl+p", "command": "workbench.action.compareEditor.previousChange", "when": "editorTextFocus && textCompareEditorVisible && vim.mode != 'Insert'" },
+	{ "key": "ctrl+n", "command": "multiDiffEditor.goToNextChange", "when": "activeEditor == 'multiDiffEditor' && vim.mode != 'Insert'" },
+	{ "key": "ctrl+p", "command": "multiDiffEditor.goToPreviousChange", "when": "activeEditor == 'multiDiffEditor' && vim.mode != 'Insert'" },
 	// navigate in panels
 	{ "key": "ctrl+tab", "command": "workbench.action.nextPanelView", "when": "panelFocus" },
 	{ "key": "ctrl+shift+tab", "command": "workbench.action.previousPanelView", "when": "panelFocus" },
