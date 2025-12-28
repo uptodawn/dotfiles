@@ -70,6 +70,8 @@
 	"diffEditor.ignoreTrimWhitespace": false,
 	// misc
 	"search.followSymlinks": false,
+	"search.useParentIgnoreFiles": true,
+	"search.useGlobalIgnoreFiles": true,
 	"window.restoreWindows": "none",
 	"telemetry.telemetryLevel": "off",
 	// vim
