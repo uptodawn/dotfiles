@@ -86,8 +86,9 @@
 	{ "key": "ctrl+w h", "command": "workbench.action.focusLastEditorGroup", "when": "sideBarFocus || auxiliaryBarFocus" },
 	{ "key": "ctrl+w l", "command": "workbench.action.focusFirstEditorGroup", "when": "sideBarFocus || auxiliaryBarFocus" },
 	{ "key": "ctrl+shift+alt+p", "command": "projectManager.listProjectsNewWindow" },
-	// toggle diff editor
-	{ "key": "alt+i", "command": "git.openFile", "when": "textCompareEditorVisible" },
+	// git
+	{ "key": "alt+i", "command": "git-graph.openFile", "when": "textCompareEditorVisible && resourceScheme == 'git-graph'" },
+	{ "key": "alt+i", "command": "git.openFile", "when": "textCompareEditorVisible && resourceScheme != 'git-graph'" },
 	{ "key": "alt+i", "command": "git.openChange", "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'" },
 	// navigate in panels
 	{ "key": "ctrl+tab", "command": "workbench.action.nextPanelView", "when": "panelFocus" },
