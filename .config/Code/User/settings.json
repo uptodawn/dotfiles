@@ -125,6 +125,7 @@
 		{ "before": [ "<leader>", "P" ], "after": [ "\"", "_", "d", "P" ] }
 	],
 	// extension specific
+	"clangd.serverCompletionRanking": false,
 	"clangd.arguments": [
 		"--header-insertion=never",
 		"--function-arg-placeholders=false",
