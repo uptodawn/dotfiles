@@ -16,6 +16,7 @@
 	"editor.unicodeHighlight.nonBasicASCII": false,
 	"editor.renderWhitespace": "all",
 	"editor.renderControlCharacters": true,
+	"editor.minimap.enabled": false,
 	// update
 	"update.enableWindowsBackgroundUpdates": false,
 	"update.mode": "none",
@@ -33,6 +34,7 @@
 	"workbench.tree.enableStickyScroll": true,
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.editor.showTabs": "none",
+	"workbench.editor.enablePreview": false,
 	// files
 	"files.autoGuessEncoding": true,
 	"files.associations": {
