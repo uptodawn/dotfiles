@@ -139,6 +139,7 @@
 	"remote.SSH.localServerDownload": "always",
 	"remote.SSH.useExecServer": true,
 	"remote.SSH.useLocalServer": true,
+	"remote.autoForwardPorts": false,
 	"remote.extensionKind": {
 		"Continue.continue": [ "workspace" ]
 	},
