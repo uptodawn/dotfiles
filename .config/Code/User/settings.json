@@ -86,7 +86,8 @@
 		"<C-k>": false
 	},
 	"vim.insertModeKeyBindings": [
-		{ "before": [ "j", "j" ], "after": [ "<Esc>" ] }
+		{ "before": [ "<C-i>" ], "after": [ "<C-t>" ] },
+		{ "before": [ "<C-j>" ], "after": [ "<enter>" ] },
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{ "before": [ "u" ], "commands": [ "undo" ] },
