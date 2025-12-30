@@ -90,9 +90,7 @@
 		{ "before": [ "<C-j>" ], "after": [ "<enter>" ] },
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
-		{ "before": [ "u" ], "commands": [ "undo" ] },
 		{ "before": [ "J" ], "commands": [ "workbench.action.gotoSymbol" ] },
-		{ "before": [ "<C-r>" ], "commands": [ "redo" ] },
 		{ "before": [ "<C-h>" ], "commands": [ ":set hlsearch" ] },
 		{ "before": [ "<C-l>" ], "commands": [ ":set nohlsearch" ] },
 		{ "before": [ "<C-t>" ], "commands": [ "workbench.action.showAllSymbols" ] },
