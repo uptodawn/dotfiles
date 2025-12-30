@@ -125,7 +125,8 @@
 	"clangd.arguments": [
 		"--header-insertion=never",
 		"--function-arg-placeholders=false",
-		"--pch-storage=memory"
+		"--pch-storage=memory",
+		"--log=error",
 	],
 	"vsicons.dontShowNewVersionMessage": true,
 	"projectManager.tags": [
