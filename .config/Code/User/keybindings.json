@@ -122,4 +122,5 @@
 	{ "key": "ctrl+shift+h", "command": "workbench.action.decreaseViewWidth", "when": "!sideBarVisible && auxiliaryBarVisible" },
 	{ "key": "ctrl+shift+l", "command": "workbench.action.increaseViewWidth", "when": "!sideBarVisible && auxiliaryBarVisible" },
 	{ "key": "ctrl+k shift+r", "command": "workbench.action.openRecent" },
+	{ "key": "ctrl+k o", "command": "workbench.action.files.openFile" },
 ]
