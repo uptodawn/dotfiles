@@ -41,6 +41,7 @@
 		".clang-*": "yaml",
 		".clangd": "yaml"
 	},
+	"files.eol": "\n",
 	// terminal
 	"terminal.integrated.fontSize": 16,
 	"terminal.integrated.commandsToSkipShell": [
