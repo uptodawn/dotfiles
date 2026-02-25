@@ -123,4 +123,6 @@
 	{ "key": "ctrl+shift+l", "command": "workbench.action.increaseViewWidth", "when": "!sideBarVisible && auxiliaryBarVisible" },
 	{ "key": "ctrl+k shift+r", "command": "workbench.action.openRecent" },
 	{ "key": "ctrl+k o", "command": "workbench.action.files.openFile" },
+	{ "key": "ctrl+alt+v", "command": "workbench.action.toggleSidebarVisibility" },
+	{ "key": "ctrl+alt+m", "command": "workbench.action.toggleMaximizedPanel", "when": "panelFocus" },
 ]
