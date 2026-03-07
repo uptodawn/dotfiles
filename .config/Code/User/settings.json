@@ -51,6 +51,7 @@
 		"-workbench.action.terminal.focusFind",
 		"-workbench.action.terminal.paste",
 		"-workbench.action.terminal.goToRecentDirectory",
+		"-editor.action.toggleTabFocusMode",
 	],
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
 	"terminal.integrated.enablePersistentSessions": false,
