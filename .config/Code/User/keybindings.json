@@ -125,4 +125,6 @@
 	{ "key": "ctrl+k o", "command": "workbench.action.files.openFile" },
 	{ "key": "ctrl+alt+v", "command": "workbench.action.toggleSidebarVisibility" },
 	{ "key": "ctrl+alt+m", "command": "workbench.action.toggleMaximizedPanel", "when": "panelFocus" },
+	{ "key": "ctrl+k ctrl+p", "command": "workbench.action.quickOpen" },
+	{ "key": "ctrl+k ctrl+;", "command": "workbench.action.showAllEditorsByMostRecentlyUsed" },
 ]
