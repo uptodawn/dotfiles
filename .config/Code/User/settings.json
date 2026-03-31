@@ -36,6 +36,7 @@
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.editor.showTabs": "none",
 	"workbench.editor.enablePreview": false,
+	"workbench.colorTheme": "Dark Modern",
 	// files
 	"files.autoGuessEncoding": true,
 	"files.associations": {
