@@ -1,37 +1,9 @@
-# locale
-unset LC_ALL
+#!/bin/sh
 
-# HiDPI
-SCALE=1.0
-echo "Xft.dpi: $(echo 96*$SCALE/${SCALE%.*}/1 | bc)" | xrdb -merge
-export GDK_SCALE=${SCALE%.*}
-export GDK_DPI_SCALE=1
-export QT_SCALE_FACTOR=${SCALE%.*}
-export XCURSOR_SIZE=$(echo "24*$SCALE/1" | bc)
-dbus-update-activation-environment --verbose --systemd \
-	GDK_SCALE GDK_DPI_SCALE QT_SCALE_FACTOR XCURSOR_SIZE
+[ ! -f "$HOME/.Xresources" ] || xrdb -merge "$HOME/.Xresources"
+[ ! -f "$HOME/.Xmodmap" ] || xmodmap "$HOME/.Xmodmap"
+[ ! -f "$HOME/.Xprofile" ] || . "$HOME/.Xprofile"
 
-# dunst
-sed "s/@DUNST_FONT_SIZE@/$((${SCALE%.*}*11))/; s/@DUNST_SCALE@/${SCALE%.*}/" \
-	~/.config/dunst/dunstrc.in > ~/.config/dunst/dunstrc
-dunst &
-
-# fcitx
-fcitxconf=~/.config/fcitx5/conf/classicui.conf
-sed "s/@FCITX_FONT_SIZE@/$((${SCALE%.*}*11))/" $fcitxconf.in > $fcitxconf
-fcitx5 -d
-
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-export SDL_IM_MODULE=fcitx
-export GLFW_IM_MODULE=ibus
-dbus-update-activation-environment --verbose --systemd \
-	GTK_IM_MODULE QT_IM_MODULE XMODIFIERS SDL_IM_MODULE GLFW_IM_MODULE
-
-# misc
-picom &
-dwmblocks &
-
-STARTUP=dwm
-. /etc/X11/xinit/xinitrc
+for i in $HOME/.config/xinitrc.d/?*.sh; do
+	[ ! -x "$i" ] || . "$i"
+done
