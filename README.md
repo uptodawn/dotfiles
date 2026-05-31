@@ -1,3 +1,7 @@
+## Linux
+
+just use stow
+
 ## windows
 
 ### vscode
