@@ -6,3 +6,6 @@ vim.opt.relativenumber = true
 vim.opt.encoding = "utf-8"
 vim.opt.fileencodings = "utf-8,gb2312"
 vim.opt.colorcolumn = "80"
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.hlsearch = true

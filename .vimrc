@@ -8,3 +8,9 @@ set encoding=utf-8
 set fileencodings=utf-8,gb2312
 set colorcolumn=80
 set belloff=all
+set mouse=a
+set ignorecase
+set smartcase
+set hlsearch
+
+nnoremap <c-l> :nohls<cr>
