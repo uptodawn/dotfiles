@@ -20,6 +20,10 @@ if [ -n "$(command -v nvim)" ]; then
 	export EDITOR='nvim'
 fi
 
+[[ "$PATH" == *"$HOME/.local/bin"* ]] || export PATH=$PATH:"$HOME/.local/bin"
+[[ "$MANPATH" == *"$HOME/.local/share/man"* ]] || \
+	export MANPATH=$MANPATH:"$HOME/.local/share/man"
+
 if ! shopt -oq posix; then
 	if [ -f /usr/share/bash-completion/bash_completion ]; then
 		. /usr/share/bash-completion/bash_completion
