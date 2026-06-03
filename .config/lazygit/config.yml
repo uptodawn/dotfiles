@@ -1,0 +1,14 @@
+gui:
+  #theme:
+  #  selectedLineBgColor:
+  #    - white
+  nerdFontsVersion: "3"
+  screenMode: half
+  border: single
+
+git:
+  commit:
+    autoWrapCommitMessage: false
+
+update:
+  method: never
