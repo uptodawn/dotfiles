@@ -59,6 +59,7 @@
 	"terminal.integrated.enablePersistentSessions": false,
 	"terminal.integrated.shellIntegration.enabled": false,
 	"terminal.integrated.allowChords": false,
+	"terminal.integrated.minimumContrastRatio": 1,
 	// explorer
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.expand": false,
