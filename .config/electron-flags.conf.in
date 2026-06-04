@@ -1,0 +1,2 @@
+--enable-features=MiddleClickAutoscroll
+--force-device-scale-factor=@ELECTRON_SCALE@
