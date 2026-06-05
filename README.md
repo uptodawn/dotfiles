@@ -2,9 +2,9 @@
 
 just use stow
 
-## windows
+## Windows
 
-### vscode
+use mklink in cmd
 
 ```cmd
 mklink %appdata%\Code\User\settings.json %cd%\.config\Code\User\settings.json
