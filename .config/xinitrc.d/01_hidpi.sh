@@ -1,15 +1,21 @@
-SCALE=${SCALE:-1.0}
+# xorg
 echo "Xft.dpi: $(echo 96*$SCALE/1 | bc)" | xrdb -merge
+
+# gtk
 export GDK_SCALE=${SCALE%.*}
 export GDK_DPI_SCALE=$(printf "%.2f" $(echo "scale=2; 1/${SCALE%.*}" | bc))
+$dbus_update GDK_SCALE GDK_DPI_SCALE
+
+# qt
 export QT_SCALE_FACTOR=$SCALE
 export QT_ENABLE_HIGHDPI_SCALING=1
 export QT_FONT_DPI=96
-export XCURSOR_SIZE=$(echo "24*$SCALE/1" | bc)
-dbus-update-activation-environment --verbose --systemd \
-	GDK_SCALE GDK_DPI_SCALE QT_SCALE_FACTOR XCURSOR_SIZE \
-	QT_ENABLE_HIGHDPI_SCALING QT_FONT_DPI
+$dbus_update QT_SCALE_FACTOR QT_ENABLE_HIGHDPI_SCALING QT_FONT_DPI
 
+export XCURSOR_SIZE=$(echo "24*$SCALE/1" | bc)
+$dbus_update XCURSOR_SIZE
+
+# various non-autoscale programs
 sed "s/@DUNST_SCALE@/${SCALE%.*}/" \
 	$HOME/.config/dunst/dunstrc.in > $HOME/.config/dunst/dunstrc
 

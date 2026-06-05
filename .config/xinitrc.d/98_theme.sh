@@ -1,3 +1,3 @@
 export QT_QPA_PLATFORMTHEME=${QT_QPA_PLATFORMTHEME:-qt5ct}
-dbus-update-activation-environment --verbose --systemd \
-	QT_QPA_PLATFORMTHEME
+$dbus_update QT_QPA_PLATFORMTHEME
+[ ! - $HOME/.fehbg ] || . $HOME/.fehbg
