@@ -16,9 +16,6 @@ export XCURSOR_SIZE=$(echo "24*$SCALE/1" | bc)
 $dbus_update XCURSOR_SIZE
 
 # various non-autoscale programs
-sed "s/@DUNST_SCALE@/${SCALE%.*}/" \
-	$HOME/.config/dunst/dunstrc.in > $HOME/.config/dunst/dunstrc
-
 sed "s/@ROFI_DPI@/$(echo 96*$SCALE/1 | bc)/" \
 	$HOME/.config/rofi/config.rasi.in > $HOME/.config/rofi/config.rasi
 
